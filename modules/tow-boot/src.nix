@@ -89,7 +89,6 @@ in
           # Patches to force eMMC OS boot to happen before SD OS boot
           ++ (optionals (variant != "boot-installer") [
             (base + "/0001-Revert-rockchip-Fix-MMC-boot-order.patch")
-            (base + "/0001-meson-Prefer-internal-boot-methods-first.patch")
             (base + "/0001-sunxi-Predictable-boot-order.patch")
           ])
           # Patches to force SD OS boot to happen before OS boot
